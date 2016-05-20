@@ -1,0 +1,5 @@
+name: Mike Harrison Media
+markdown: redcarpet
+highlighter: rouge # or pygments or null
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+excerpt_separator: <!--more-->

@@ -1,0 +1,20 @@
+section.contact
+  div.contact-blurb
+    p If you'd like to work with me, please get in touch using the form
+  div.form
+    form(action="https://formspree.io/mjah84@gmail.com" method="POST")
+      div.contact-info-group
+        label
+          span Your name
+          input(type="text" name="name")
+        label 
+          span Your email
+          input(type="email" name="_replyto")
+      label 
+        span Your message
+        textarea(name="message")
+      div.submit-wrap
+        input(type="submit" value="Send")
+  div.emailer 
+    p Or send me mail
+    a(href="mike@mjhfoto.com") mike@mjhfoto.com

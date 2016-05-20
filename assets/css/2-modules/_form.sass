@@ -1,0 +1,46 @@
+form
+  max-width: 500px
+  margin: 0 auto 20px
+  font-family: monospace
+  color: white
+  input, textarea
+    border: 3px solid black
+    border-radius: 5px
+    width: 100%
+    box-sizing: border-box
+  .submit-wrap
+    text-align: right
+  [type="submit"]
+    width: 33%
+    height: 50px
+    background: $gray
+    border: solid black 3px
+    color: black
+  [value="Send"]
+    font-size: 18px
+  input
+    height: 30px
+    &:focus
+      outline: none
+      border-color: $gray
+  textarea
+    height: 10em
+    &:focus
+      outline: none
+      border-color: $gray
+
+
+  .contact-info-group
+    label
+      width: 50%
+      float: left
+      box-sizing: border-box
+      &:nth-child(1)
+        padding-right: 10px
+      &:nth-child(2)
+        padding-left: 10px
+  label
+    display: block
+    margin-bottom: 20px
+    span
+      display: block
