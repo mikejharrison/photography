@@ -3,10 +3,17 @@ layout: default
 title: Archive | Mike Harrison Photography
 ---
 {% include header.html %}
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<div class="archive-wrap">
+  <h2>Archive</h2>
+  <div class="post-index">
+    <ul>
+      {% for post in site.posts %}
+        <li>
+
+          <a href="{{ post.url }}">{{ post.title }}</a>
+
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
