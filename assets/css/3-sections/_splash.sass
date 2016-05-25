@@ -1,4 +1,5 @@
 section.splash
+  z-index: -1
   padding-top: 100px
   width: 100%
   .gallery-container
@@ -7,11 +8,12 @@ section.splash
     flex-wrap: wrap
     align-items: center
     justify-content: center
-    div
+    figure
+      border-radius: 5px
       margin-right: 5px
       margin-left: 5px
       margin-bottom: 5px
-      width: 30%
+      width: 25%
       img
         width: 100%
         border-radius: 3px
@@ -21,5 +23,98 @@ section.splash
     background-color: #eee
     text-align: center
     p
+      font-family: monospace
       margin: 0 10px
       padding: 0
+
+// Caption Styles
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700)
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css)
+
+.caption-hover
+  font-family: 'Lato', Arial, sans-serif
+  position: relative
+  float: left
+  overflow: hidden
+  margin: 10px 1%
+  min-width: 230px
+  max-width: 315px
+  width: 100%
+  color: #eee
+  text-align: center
+  font-size: 16px
+  background-color: rgba(255,255,255,0.1)
+  line-height: 1.5em
+
+.caption-hover *,
+.caption-hover *:before,
+.caption-hover *:after
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-transition: all 0.25s linear
+  transition: all 0.25s linear
+
+.caption-hover img
+  width: calc(120%)
+  backface-visibility: hidden
+  vertical-align: top
+
+.caption-hover figcaption
+  position: absolute
+  top: 50%
+  width: 100%
+  -webkit-transform: translateY(-25%)
+  transform: translateY(-25%)
+  padding: 5px 40px
+  opacity: 0
+
+.caption-hover h3
+  color: black
+  margin: 0
+  //text-transform: uppercase
+  font-weight: 700
+
+.caption-hover p
+  font-weight: 400
+  margin: 0
+  font-size: 0.9em
+
+.caption-hover i
+  position: absolute
+  color: #fff
+  font-size: 34.375px
+  line-height: 55px
+  width: 55px
+  bottom: 0
+  right: 0
+  background-color: gray
+  -webkit-transform: translateX(55px)
+  transform: translateX(55px)
+
+.caption-hover a
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+
+.caption-hover:hover img,
+.caption-hover.hover img
+  zoom: 1
+  filter: alpha(opacity=30)
+  -webkit-opacity: 0.3
+  opacity: 0.3
+  -webkit-transform: translateX(-40px)
+  transform: translateX(-40px)
+
+.caption-hover:hover figcaption,
+.caption-hover.hover figcaption
+  -webkit-transform: translateY(-50%)
+  transform: translateY(-50%)
+  opacity: 0.5
+
+.caption-hover:hover i,
+.caption-hover.hover i
+  -webkit-transform: translateX(0)
+  transform: translateX(0)
