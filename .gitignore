@@ -33,9 +33,3 @@ Temporary Items
 ### Sass ###
 .sass-cache/
 *.css.map
-
-
-### Jekyll ###
-_site/
-.sass-cache/
-.jekyll-metadata

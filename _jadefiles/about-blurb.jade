@@ -1,0 +1,30 @@
+section.about-blurb
+  div.about-photo
+    img(src="../assets/img/about-mike.jpg")
+  div.about-text
+    h2 About me
+    p.lead I'm a photographer based in south east London. 
+    p I photograph a variety of subjects, principally conferences and weddings professionally. 
+    p For my own pleasure I like shooting photos in and out of the city, with buildings, nature and wildlife in front of my lens.
+    p.lead If you see something on this site and think 'hey, I'd like to work with this guy', please get in touch.
+    section.contact
+      div.contact-blurb
+        p You can get in touch by using this form
+      div.form
+        form(action="https://formspree.io/mjah84@gmail.com" method="POST")
+          div.contact-info-group
+            label
+              span Your name
+              input(type="text" name="name")
+            label 
+              span Your email
+              input(type="email" name="_replyto")
+          label 
+            span Your message
+            textarea(name="message")
+          div.submit-wrap
+            input(type="submit" value="Send")
+      div.emailer
+        p Or send me mail
+        p
+          a(href="mailto:mikehimages@gmail.com") mikehimages@gmail.com

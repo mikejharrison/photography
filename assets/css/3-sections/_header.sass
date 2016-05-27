@@ -4,7 +4,7 @@ header
   width: 100%
   background-color: rgba(255, 255, 255, 0.3)
   position: fixed
-  .logo-wrap, .mobile-logo-wrap
+  .logo-wrap, .mobile-logo-wrap, .small-mobile-logo-wrap
     margin-left: 30px
     margin-top: 20px
     float: left
@@ -26,7 +26,7 @@ header
           margin: 0
           padding: 0
           list-style: none
-  .mobile-logo-wrap
+  .mobile-logo-wrap, .small-mobile-logo-wrap
     display: none
     margin: 20px 0 10px 30px
   .mobile-nav
@@ -46,3 +46,12 @@ header
     .mobile-logo-wrap
       float: left
       display: block
+@media (max-width: 350px)
+  header
+    .logo-wrap
+      display: none
+    .mobile-logo-wrap
+      display: none
+    .small-mobile-logo-wrap
+      display: block
+      float: left

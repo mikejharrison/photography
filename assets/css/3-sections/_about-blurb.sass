@@ -1,0 +1,24 @@
+section.about-blurb
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  background-color: #eee
+  .about-photo
+    width: 400px
+    img
+      width: 100%
+      height: auto
+  .about-text
+    flex: 1
+
+@media (max-width: 880px)
+  section.about-blurb
+    flex-direction: column
+
+@media (max-width: 410px)
+  section.about-blurb
+    .about-photo
+      width: 100%
+      img
+        width: 100%
