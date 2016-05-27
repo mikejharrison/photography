@@ -1,39 +1,40 @@
 article.iatefl
-  width: 100%
-  margin-bottom: 20px
-  padding: 0
-  display: flex
-  flex-direction: column
-  align-items: center
-  .iatefl-gallery
+  z-index: -1
+  padding-top: 100px
+  .gallery-container
     margin-bottom: 20px
     display: flex
     flex-direction: row
     flex-wrap: wrap
     align-items: center
     justify-content: center
-    figure.iatefl
-      margin: 0
+    figure
+      border-radius: 5px
+      margin-right: 5px
+      margin-left: 5px
+      margin-bottom: 5px
       width: 30%
       img
         width: 100%
+        border-radius: 3px
       h3
         font-size: 24px
+      i
+        background-color: gray
+        border-radius: 5px
       p
-        font-family: 'Lato'
         font-size: 16px
-        color: black
 
 @media (max-width: 1100px)
   article.iatefl
-    .iatefl-gallery
-      figure.iatefl
+    .gallery-container
+      figure
         width: 45%
         //&:first-child
           margin-top: 5px
 
 @media (max-width: 620px)
   article.iatefl
-    .iatefl-gallery
-      figure.iatefl
+    .gallery-container
+      figure
         width: 100%

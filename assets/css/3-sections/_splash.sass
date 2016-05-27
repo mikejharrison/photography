@@ -38,7 +38,7 @@ section.splash
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700)
 @import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css)
 
-.caption-hover
+.caption-hover, .static-caption
   font-family: 'Lato', Arial, sans-serif
   position: relative
   float: left
@@ -53,6 +53,9 @@ section.splash
   background-color: rgba(255,255,255,0.1)
   line-height: 1.5em
 
+.static-caption *,
+.static-caption *:before,
+.static-caption *:after,
 .caption-hover *,
 .caption-hover *:before,
 .caption-hover *:after
@@ -61,11 +64,13 @@ section.splash
   -webkit-transition: all 0.25s linear
   transition: all 0.25s linear
 
+.static-caption img,
 .caption-hover img
   width: calc(120%)
   backface-visibility: hidden
   vertical-align: top
 
+.static-caption figcaption,
 .caption-hover figcaption
   position: absolute
   top: 50%
@@ -75,6 +80,7 @@ section.splash
   padding: 5px 40px
   opacity: 0
 
+.static-caption, h3,
 .caption-hover, h3
   font-size: 30px
   color: black
@@ -82,11 +88,13 @@ section.splash
   //text-transform: uppercase
   font-weight: 700
 
+.static-caption p,
 .caption-hover p
   font-weight: 400
   margin: 0
   font-size: 0.9em
 
+.static-caption i
 .caption-hover i
   position: absolute
   color: #fff
@@ -99,12 +107,20 @@ section.splash
   -webkit-transform: translateX(55px)
   transform: translateX(55px)
 
+.static-caption a,
 .caption-hover a
   position: absolute
   top: 0
   bottom: 0
   left: 0
   right: 0
+
+.static-caption:hover img
+  zoom: 1
+  filter: alpha(opacity=30)
+  -webkit-opacity: 0.3
+  opacity: 0.3
+
 
 .caption-hover:hover img,
 .caption-hover.hover img
@@ -115,12 +131,14 @@ section.splash
   -webkit-transform: translateX(-40px)
   transform: translateX(-40px)
 
+.static-caption:hover figcaption,
 .caption-hover:hover figcaption,
 .caption-hover.hover figcaption
   -webkit-transform: translateY(-50%)
   transform: translateY(-50%)
   opacity: 0.5
 
+.static-caption:hover i,
 .caption-hover:hover i,
 .caption-hover.hover i
   -webkit-transform: translateX(0)
