@@ -26,7 +26,7 @@ sharing:
 # Disqus comments configuration (leave blank to disable comments)
 disqus_shortname:
 
-markdown: redcarpet
+markdown: kramdown
 highlighter: rouge # or pygments or null
 paginate: 5
 exclude: ["node_modules", "gulpfile.js", "package.json", "readme.md"]
